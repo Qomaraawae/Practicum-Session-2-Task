@@ -1,0 +1,76 @@
+/* Gaya dasar untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Gaya untuk navbar */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk daftar dalam navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Gaya untuk item navbar */
+.navbar li {
+    display: inline;
+}
+
+/* Gaya untuk tombol dan input di navbar */
+.navbar button, .navbar select, .navbar input {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* Gaya untuk dark mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Gaya artikel */
+article {
+    margin: 80px 20px 20px 20px; /* Menambah jarak bagian atas */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: justify; /* Menambahkan rata kanan-kiri */
+}
+
+/* Gaya artikel saat dark mode */
+body.dark-mode article {
+    background-color: #333;
+    color: white;
+    text-align: justify; /* Pastikan rata kanan-kiri di dark mode juga */
+}
+
+/* Gaya untuk judul */
+h1 {
+    text-align: center;
+}
+
+/* Gaya untuk label dalam navbar */
+.navbar label {
+    color: black; /* Warna label tetap hitam */
+}

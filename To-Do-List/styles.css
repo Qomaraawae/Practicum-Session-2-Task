@@ -1,0 +1,121 @@
+/* Atur gaya umum untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Atur gaya untuk container utama */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Gaya untuk judul */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Gaya untuk input */
+input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efek ketika input difokuskan */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk daftar tugas */
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Gaya untuk elemen daftar */
+li {
+    background-color: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada elemen daftar */
+li:hover {
+    background-color: #e9ecef;
+}
+
+/* Gaya ketika tugas selesai */
+li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Gaya untuk tombol delete */
+.delete-btn {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol delete */
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Custom scrollbar untuk daftar */
+ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
